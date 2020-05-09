@@ -9,7 +9,9 @@ import com.example.entity.Product;
 
 public interface ViewWhishlistDao extends JpaRepository<Product,Integer>{
 
-	@Query("select d from Product d")
-	List<Product> findAll();
+	@Query("select d from Product d where d.userId=?1")
+	
+
+	List<Product> fetch(Integer userId);
 
 }

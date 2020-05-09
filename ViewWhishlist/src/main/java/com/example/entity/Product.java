@@ -15,13 +15,24 @@ public class Product {
 	private String productCatogery;
 	@Column(length=20)
 	private String productName;
+	@Column(length=10)
+	private int userId;
 
 		
-	public Product(int productId, String productCatogery, String productName) {
+	public Product(int productId, String productCatogery, String productName, int userId) {
 		super();
 		this.productId = productId;
 		this.productCatogery = productCatogery;
 		this.productName = productName;
+		this.userId = userId;
+	}
+
+	public int getUserId() {
+		return userId;
+	}
+
+	public void setUserId(int userId) {
+		this.userId = userId;
 	}
 	
 	public Product() {

@@ -22,7 +22,7 @@ public class AddtoWhishlistController {
 
 	// Create Employee
 	@PostMapping("/Add")
-	public ResponseEntity<String> AddtoWhishlist(@RequestBody Product product) {
-		Product e = serviceobj.Addtowhishlist(product);
-			return new ResponseEntity<String>("Product Whishlisted successfully", new HttpHeaders(), HttpStatus.OK);	
+	public Object AddtoWhishlist(@RequestBody Product product) {
+		return serviceobj.Addtowhishlist(product);
+				
 }}

@@ -1,10 +1,11 @@
 Manifest-Version: 1.0
-Implementation-Title: EmployeeCRUD
-Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Title: ViewWhishlist
+Implementation-Version: 1
 Built-By: asus
 Implementation-Vendor-Id: com.capgemini
 Build-Jdk: 1.8.0_161
-Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
- ot-starter-parent/ViewWhishlist
+Implementation-URL: http://projects.spring.io/spring-boot/ViewWhishlis
+ t/
 Created-By: Maven Integration for Eclipse
+Implementation-Vendor: Pivotal Software, Inc.
 

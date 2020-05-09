@@ -13,11 +13,11 @@ import com.example.entity.Product;
 public class ViewWhishlistServiceImpl implements ViewWhishlistService {
 	@Autowired 
 	private ViewWhishlistDao dao;
+
 	@Override
-	public List<Product> viewProduct() {
-		List<Product>  productsList=dao.findAll(); 
+	public List<Product> viewProduct(Integer userId) {
+		List<Product>  productsList=dao.fetch(userId); 
 		return productsList;
 	}
+	}
 	
-
-}
